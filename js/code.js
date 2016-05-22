@@ -17,7 +17,7 @@
         player = new YT.Player('player', {
           height: '390',
           width: '80%',
-          videoId: 'uJWWA-h_-5g',    // this is the end of the URL code
+          videoId: '8Yl1wof2XNY',    // this is the end of the URL code
           events: {
             'onClick': onPlayerReady,
             'onStateChange': onPlayerStateChange

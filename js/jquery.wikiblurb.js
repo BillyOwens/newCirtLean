@@ -7,7 +7,7 @@
 	    wikiURL: "http://en.wikipedia.org/",
 	    apiPath: 'w',
 	    section: 0,
-	    page: 'Dublin',
+	    page: 'Football',
 	    removeLinks: false,	    
 	    type: 'all',
 	    customSelector: '',
