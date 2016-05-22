@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="themes/myApp.min.css" />
+<link href="css/newCSS.css" rel="stylesheet" type="text/css"/>
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="js/jquery.wikiblurb.js" type="text/javascript"></script>
+
+<script src="js/code.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="page1"  data-theme="b">
+    
+  <div data-role="header">
+  <!-- <h1>DSGN</h1>-->
+  <a href="http://n3xtg3nov8ion.com/tutorials/" data-transition="slide">
+		<center> <img src="images/icon1.png"/center></a>
+    
+  </div>
+
+  					<p id="testDate">Click the button below to display the current date and time</p>
+			
+	
+	<button type="button"  onclick="displayDate()">Display Date/Time
+		</button>
+  
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#page2" data-transition="slide">
+				<img src="images/icon2.png" alt"n3xtg3nov8ion">
+					Films</a></li>
+				<li><a href="#page3" data-transition="slide">
+				<img src="images/icon.png" alt"n3xtg3nov8ion">
+					Songs</a></li>
+				<li><a href="#page4" data-transition="slide">
+				<img src="images/icon1.png" alt"n3xtg3nov8ion">
+					Fashion</a></li>
+         		<li><a href="#page5" data-transition="slide">
+				<img src="images/icon2.png" alt"n3xtg3nov8ion">
+					Football</a></li>
+         		<li><a href="#page6" data-transition="slide">
+				<img src="images/icon1.png" alt"n3xtg3nov8ion">
+					Location</a></li>
+		</ul>		
+    </div>
+
+  <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    
+  </div>
+</div> 
+
+<div data-role="page" id="page2" style="background-image: url('images/background.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+    
+    
+  <div data-role="header">
+    <h1>Timetable</h1>
+    <a href="#page1" data-transition="slide" data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+	
+	<div data-role="content" data-theme="b">			<!-- this is where the back board lies -->
+		
+		<div id="userLocation"></div>
+		
+    	<h4 style="text-align:center;">
+    	<p><a href="sms:0868620488, 0868620499, 000340034"> <img src="images/foto1.png" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"
+			></a></p>
+			
+			 <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-iconpos="right">
+      <h3>Click for info</h3>
+     Study area � having a good study area can make a huge difference to how well you learn. Study in a well-lit, quiet area, away from noises and people in the house. If this isn�t possible, it might be better to study at the library.
+
+Make sure your desk is tidy and organised � it means you can concentrate on studying and learning, not trying to find information.
+
+Find out about the exam � find out what format the exam will take � are the questions in essay, short answer or multiple-choice format? Is the exam open book or closed book? Knowing how the exam is marked and what proportion of your total mark it�s worth might also be helpful.
+
+To do lists � make a to do list before each study session. Breaking tasks down into small, manageable chunks will make it less overwhelming. Cross them off as you go.
+
+Past exam papers � ask your teacher for past exam papers. They can be a useful insight into what your exam will be like and also provide a guide for what you know and the areas where you need help. If possible, practice some under exam conditions and get your teacher to mark them	</div>
+  </div>
+	
+		<div class="ui-content" id="contact_infos" align="center" id="testingAjax1">
+          	
+          	<a id="testingAjax1" data-role="button" data-theme="b" data-collapsed="true"  onclick="text1()"> How many minutes are in a year ? </a>
+          </div>
+    
+    <!--      	
+		<a class="twitter-timeline"  href="https://twitter.com/webbdevv"  data-widget-id="407647530051043329">Tweets by @WebDevv</a>
+		
+		-->
+		<div data-role="collapsible" data-iconpos="right">
+  	 				<h3>Films</h3>
+  	 				<iframe width="80%" height="600" src="http://www.fandango.com/boxoffice" frameborder="0" allowfullscreen></iframe>
+		
+		</div>
+	</div>
+
+  
+
+ <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" data-transition="slide" data-icon="home">Film</a></li>
+        <li><a href="#page3"  data-transition="slide" data-icon="arrow-r">Songs</a></li>
+        <li><a href="#page4" data-transition="slide" data-icon="search">Fashion</a></li>
+          <li><a href="#page5" data-transition="slide" data-icon="search">Football</a></li>
+          <li><a href="#page6" data-transition="slide" data-icon="home">Location</a></li>
+        
+      </ul>
+   </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page3" style="background-image: url('images/background2.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+    
+  <div data-role="header">
+  <h1> Songs </h1>
+		<a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+
+	
+  <div data-role="main" class="ui-content" align="center">
+     <p><img src="images/foto2.png" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px">
+          		<!--<iframe width="80%" height="315" src="https://www.youtube.com/embed/Ih6ApEBmHic" frameborder="0" allowfullscreen></iframe>-->
+			
+				
+            <a id="testingAjax2" data-role="button" data-theme="u" data-collapsed="true"  onclick="text2()">What was the codename for buiding the Atom Bomb in WW2 ?</a></div>
+         	
+
+          	<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-iconpos="right">
+      <h3>Notepad</h5>      	
+     <iframe width="80%" height="300" src="http://n3xtg3nov8ion.com/todo-list-indexeddb1" frameborder="0" allowfullscreen></iframe>
+			
+     </div>
+  </div>
+         
+		 <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-iconpos="right">
+      <h3>Top 10 Songs</h5>      	
+     <iframe width="80%" height="600" src="http://www.billboard.com/charts/hot-100" frameborder="0" allowfullscreen></iframe>
+		
+     </div>
+  </div>
+   
+     <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+     <ul>
+        <li><a href="#page1" data-transition="slide" data-icon="home">Film</a></li>
+        <li><a href="#page3"  data-transition="slide" data-icon="arrow-r">Songs</a></li>
+        <li><a href="#page4" data-transition="slide" data-icon="search">Fashion</a></li>
+          <li><a href="#page5" data-transition="slide" data-icon="search">Football</a></li>
+          <li><a href="#page6" data-transition="slide" data-icon="home">Location</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page4" style="background-image: url('images/background.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+
+  <div data-role="header">
+ <h1> Fashion </h1>
+		<a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content" data-theme="b" align="center">
+  	
+    <p><img src="images/foto3.png" width"80%" height"180"  align="center" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		 
+		  	<a id="testingAjax3" data-role="button" data-theme="b" data-collapsed="true"  onclick="text3()"> What school was founded first ? </a>
+         
+         
+         </div>
+         
+          <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-iconpos="right">
+      <h3>Click for game!</h5>      	
+     <iframe width="100%" height="500" src="http://n3xtg3nov8ion.com/game/" frameborder="0" allowfullscreen></iframe></center>
+		<a href="http://n3xtg3nov8ion.com/TheAviator/" data-transition="slide"  data-icon="home" data-iconpos="notext">More games</a>
+		</div>
+  </div>
+
+       
+       
+       <div data-role="main" class="ui-content" align="center">
+        <div data-role="collapsible" data-iconpos="right">
+  	 	<h3>Images</h3>
+      <a id="page5Text"><p>Cochella </p></a>
+	<a id="page5AJAXButton" data-role="button" data-icon="plus" data-theme="u">Get Data</a>
+       	<ul data-role="listview" id="page5ImageList">
+        </ul>
+        </div> </div>
+			
+         
+	<!--<div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax3">
+          	<h3>Atomic Bomb</h3>
+          	
+          	<p><img src="images/foto5.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		
+          	<a id="testingAjax5" data-role="button" data-theme="j" data-collapsed="true"  onclick="text5()">Nuclear Bomb</a>
+       </div>-->
+	
+	
+
+  <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+     <ul>
+        <li><a href="#page1" data-transition="slide" data-icon="home">Film</a></li>
+        <li><a href="#page3"  data-transition="slide" data-icon="arrow-r">Songs</a></li>
+        <li><a href="#page4" data-transition="slide" data-icon="search">Fashion</a></li>
+          <li><a href="#page5" data-transition="slide" data-icon="search">Football</a></li>
+          <li><a href="#page6" data-transition="slide" data-icon="home">Location</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page5" data-theme="b">	
+  <div data-role="header">
+   <h1> Football</h1>
+   	<a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+
+ <!-- <div data-role="main" class="ui-content" data-theme="b">	
+  	
+  	 <div data-role="collapsible" data-iconpos="right">
+  	 	<h3>Images</h3>
+      <a id="page5Text"><p>World Cup </p></a>
+	<a id="page5AJAXButton" data-role="button" data-icon="plus" data-theme="b">Get Data</a>
+       	<ul data-role="listview" id="page5ImageList">
+        </ul>
+    </div></div>-->
+  	<div data-role="main" class="ui-content" align="center">
+        	<p><img src="images/foto5.png" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		 </div>
+		 		 
+		 	<div data-role="main" class="ui-content" data-theme="b">	
+		  		 <div data-role="collapsible" data-iconpos="right">
+		  		 	<h3>Messi Magic</h3>
+		  		 	<iframe width="80%" height="400" src="https://www.youtube.com/embed/8Yl1wof2XNY" frameborder="0" allowfullscreen></iframe>
+			</div></div>
+			
+			  <div data-role="main" class="ui-content" align="center">
+    			<div data-role="collapsible" data-iconpos="right">
+     			 <h3>Best of Best!</h5>   
+      				<div id="player"></div> 
+      		
+      			</div>   	
+       		 </div>
+		 
+		 
+		 		<div data-role="main" class="ui-content" data-theme="b">	
+		  		 <div data-role="collapsible" data-iconpos="right">
+  	 				<h3>Info on Football</h3>
+  	 				
+  					<div id="article"></div>
+  					
+  					<div id="otherWikiArticle"></div> 	
+   
+    </div></div>
+
+  <div data-role="footer" data-theme="b">	
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+     <ul>
+        <li><a href="#page1" data-transition="slide" data-icon="home">Film</a></li>
+        <li><a href="#page3"  data-transition="slide" data-icon="arrow-r">Songs</a></li>
+        <li><a href="#page4" data-transition="slide" data-icon="search">Fashion</a></li>
+          <li><a href="#page5" data-transition="slide" data-icon="search">Football</a></li>
+          <li><a href="#page6" data-transition="slide" data-icon="home">Location</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page6" style="background-image: url('images/foto5.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+    data-theme="b">
+  <div data-role="header">
+   <h1> Location </h1>
+    <a href="#page1" data-transition="slide"  data-icon="home" data-iconpos="notext">Home</a>
+    	</a>
+		<a href="https://www.n3xtg3nov8ion.com" 
+		data-icon="gear" data-iconpos="notext" class="ui-btn-right">n3xt g3nov8ion</a>
+	</div>
+	
+	
+
+ <div data-role="main" class="ui-content" align="center">
+    <div data-role="collapsible" data-iconpos="right">
+      <h3>Click for Map</h5>      	
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.9194002282024!2d-6.
+		356426949556887!3d53.34469898243884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+		1!3m3!1m2!1s0x48670cddc11c88a5%3A0x4f309b7ebbe9098d!2sSt.+John&#39;s+College%2C+De+La+Salle!5e0!
+		3m2!1sen!2suk!4v1463519767743" width="80%" height="450" frameborder="0" style="border:0" 
+		allowfullscreen></iframe>
+     </div>
+     
+     <h3><p> Le Fanu Road,
+		</br>Ballyfermot
+			</br> Dublin,
+			</br> Ireland,</h3>     
+  </div>
+   
+		
+		
+	
+  
+  <div data-role="main" class="ui-content" align="center">
+  	
+  	<p><textarea id="textbox" style="width:350px; height:200px;"></textarea></p>
+  <p><button type="button" id="button" onclick="startFetch(100, 500)">
+    Fetch or Add articles</button></p>
+    
+				
+				
+				<h3><p>&copy; Promoted by Ballyfermot Partnership</p>
+		<p><img src="images/Bpartnership.jpg" width"80%" height""  align="center">
+			<!--<p><img src="images/ourlogo.png" width"80%" height""  align="center">-->
+		</p></font></h3>
+		</div>
+		
+  <div data-role="footer">
+    <h1>&copy; N3xt Genov8ion 2016</h1>
+    <div data-role="navbar">
+     <ul>
+        <li><a href="#page1" data-transition="slide" data-icon="home">Film</a></li>
+        <li><a href="#page3"  data-transition="slide" data-icon="arrow-r">Songs</a></li>
+        <li><a href="#page4" data-transition="slide" data-icon="search">Fashion</a></li>
+          <li><a href="#page5" data-transition="slide" data-icon="search">Football</a></li>
+          <li><a href="#page6" data-transition="slide" data-icon="home">Location</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<script type="text/javascript">
+
+    var textbox = document.getElementById("textbox");
+    var button = document.getElementById("button");
+    var tempscript = null, minchars, maxchars, attempts;
+
+    function startFetch(minimumCharacters, maximumCharacters, isRetry) {
+      if (tempscript) return; // a fetch is already in progress
+      if (!isRetry) {
+        attempts = 0;
+        minchars = minimumCharacters; // save params in case retry needed
+        maxchars = maximumCharacters;
+        button.disabled = true;
+        button.style.cursor = "wait";
+      }
+      tempscript = document.createElement("script");
+      tempscript.type = "text/javascript";
+      tempscript.id = "tempscript";
+      tempscript.src = "http://en.wikipedia.org/w/api.php"
+        + "?action=query&generator=random&prop=extracts"
+        + "&exchars="+maxchars+"&format=json&callback=onFetchComplete&requestid="
+        + Math.floor(Math.random()*999999).toString();
+      document.body.appendChild(tempscript);
+      // onFetchComplete invoked when finished
+    }
+
+    function onFetchComplete(data) {
+      document.body.removeChild(tempscript);
+      tempscript = null
+      var s = getFirstProp(data.query.pages).extract;
+      s = htmlDecode(stripTags(s));
+      if (s.length > minchars || attempts++ > 5) {
+        textbox.value = s;
+        button.disabled = false;
+        button.style.cursor = "auto";
+      } else {
+        startFetch(0, 0, true); // retry
+      }
+    }
+
+    function getFirstProp(obj) {
+      for (var i in obj) return obj[i];
+    }
+
+    // This next bit borrowed from Prototype / hacked together
+    // You may want to replace with something more robust
+    function stripTags(s) {
+      return s.replace(/<\w+(\s+("[^"]*"|'[^']*'|[^>])+)?>|<\/\w+>/gi, "");
+    }
+    function htmlDecode(input){
+      var e = document.createElement("div");
+      e.innerHTML = input;
+      return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+  </script>
+  
+  <script type="text/javascript">
+
+$(document).ready(function(){
+    
+    $('#article').wikiblurb();
+    
+    $('#otherWikiArticle').wikiblurb({
+	wikiURL: "http://football.wikia.com",
+	apiPath: '',
+	section: 0,
+	page: 'football',
+	removeLinks: false,	    
+	type: 'text',
+	customSelector: '',
+        callback: function() {
+            console.log('Data Loaded...');
+        }
+    });
+});
+
+</script>
+
+<script>
+	$('#page5AJAXButton').bind("click", function(){
+	//window.alert("page 5 Button Clicked!");
+	//set text box to loading message
+	$('#page5Text').attr('innerHTML','Loading Data.....');
+	//example URL for AJAX remote call taken from
+	//http://www.jquery4u.com/demos/ajax/
+	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+{
+  tags:"cochella",
+  tagmode: "any",
+  format: "json"
+},
+function(data) {
+	$('#page5Text').attr('innerHTML','');
+  $.each(data.items, function(i,item){			  
+	  $('#page5ImageList').append('<li><a><img src="' + item.media.m + '"/><p>This is list item '+ i + '</p></a></li>');
+    if ( i == 20 ) return false;
+  });
+});//end of JSON Call
+
+});//end of page5AJAXButton click handler
+
+//new handlers for touch events, swap with mouseUp/mouseDown for
+//development in Dreamweaver or a web browser
+    $('#page5AJAXButton').bind('mouseDown', function () {
+//    $('#page5AJAXButton').bind('touchstart', function () {
+      //do something with your buttons here
+                                });
+    $('#page5AJAXButton').bind('mouseUp', function () {
+//    $('#page5AJAXButton').bind('touchend', function () {
+		//cleanout the tag to prevent results being duplicated
+        //do something with your buttons here
+                                });
+
+	
+</script>
+
+
+</body>
+</html>
